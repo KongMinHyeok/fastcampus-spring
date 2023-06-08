@@ -12,7 +12,7 @@ public class Hello {
 	
 	// 2. URL과 메서드를 연결
 	@RequestMapping("/hello")
-	private void main() { // 인스턴스 메서드 - iv, cv를 둘다 사용가능
+	public void main() { // 인스턴스 메서드 - iv, cv를 둘다 사용가능
 		System.out.println("Hello - private");
 		System.out.println(cv); // OK
 		//System.out.println(iv); // OK

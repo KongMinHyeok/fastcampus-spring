@@ -7,10 +7,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@Controller
-public class TwoDice {
+@Controller // ctrl + shift + o 자동 import
+public class TwoDice { // 실행때마다 결과가 변함 = 동적리소스 / img = 정적리소스
     @RequestMapping("/rollDice")
-    //    public static void main(String[] args) {
     public void main(HttpServletResponse response) throws IOException {
         int idx1 = (int)(Math.random()*6)+1;
         int idx2 = (int)(Math.random()*6)+1;

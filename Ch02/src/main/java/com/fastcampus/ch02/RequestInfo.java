@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class RequestInfo {
     @RequestMapping("/requestInfo")
-    //    public static void main(String[] args) {
     public void main(HttpServletRequest request) {
         System.out.println("request.getCharacterEncoding()="+request.getCharacterEncoding()); // 요청 내용의 인코딩
         System.out.println("request.getContentLength()="+request.getContentLength());  // 요청 내용의 길이. 알수 없을 때는 -1

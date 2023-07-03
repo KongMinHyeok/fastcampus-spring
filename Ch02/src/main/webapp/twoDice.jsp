@@ -12,7 +12,7 @@
 	int idx2 = getRandomInt(6);
 %>
 <html>
-<head>
+<head> 
 	<title>twoDice.jsp</title>
 </head>
 <body>
